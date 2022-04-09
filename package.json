@@ -2,7 +2,6 @@
   "name": "rln-interrep-cloudflare",
   "version": "1.0.0",
   "description": "CloudFlare Rate-Limiting like service proof-of-concept implemented using RLN and InterRep",
-  "main": "index.js",
   "author": "Blagoj Dimovski",
   "license": "MIT",
   "private": true,
