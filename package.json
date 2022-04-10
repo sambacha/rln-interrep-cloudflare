@@ -23,5 +23,9 @@
     "user3": "yarn workspace client user3",
     "appExample": "yarn workspace app_example start",
     "interrepMock": "yarn workspace interrep_mock start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "fs-extra": "^10.0.1"
   }
 }
