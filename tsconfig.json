@@ -1,9 +1,11 @@
 {
     "compilerOptions": {
       "module": "commonjs",
+   "esModuleInterop": true,
       "target": "es6",
       "sourceMap": false,
       "inlineSourceMap": true,
+     "noImplicitAny": false,
       "composite": true,
       "declaration": true,
       "declarationMap": true,
@@ -12,8 +14,8 @@
       "pretty": true,
       "lib": [
         "es6",
-        "dom"
-      ],
+        "dom",
+      "dom.iterable"],
       "typeRoots": [
         "./node_modules/@types"
       ],

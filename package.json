@@ -1,8 +1,7 @@
 {
   "name": "rln-interrep-cloudflare",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CloudFlare Rate-Limiting like service proof-of-concept implemented using RLN and InterRep",
-  "main": "index.js",
   "author": "Blagoj Dimovski",
   "license": "MIT",
   "private": true,
@@ -13,7 +12,10 @@
     "interrep_mock"
   ],
   "scripts": {
-    "build": "yarn workspaces run build",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "server": "yarn workspace server start",
     "client": "yarn workspace client start",
     "singleClient": "yarn workspace client start",
@@ -23,5 +25,9 @@
     "user3": "yarn workspace client user3",
     "appExample": "yarn workspace app_example start",
     "interrepMock": "yarn workspace interrep_mock start"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "turbo": "^1.2.2"
   }
 }
