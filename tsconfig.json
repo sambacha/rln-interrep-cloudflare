@@ -1,21 +1,23 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "target": "es6",
-      "sourceMap": false,
-      "inlineSourceMap": true,
-      "composite": true,
+  "compilerOptions": {
+      "allowUnreachableCode": false,
+      "allowUnusedLabels": false,
       "declaration": true,
-      "declarationMap": true,
-      "moduleResolution": "node",
-      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "lib": ["es2018"],
+      "module": "commonjs",
+      "noEmitOnError": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
       "pretty": true,
-      "lib": [
-        "es6",
-        "dom"
-      ],
-      "typeRoots": [
-        "./node_modules/@types"
-      ],
-    },
-  }
+      "sourceMap": true,
+      "strict": true,
+      "target": "es2018",
+      "rootDir": ".",
+      "outDir": "build",
+      "esModuleInterop": true,
+      "resolveJsonModule": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -25,8 +25,8 @@
     "user1": "node . normal 0",
     "user2": "node . spam 0",
     "user3": "node . normal 1",
-    "singleClient": "node dist/src/tests/singleClient.js",
-    "multiClient": "node dist/src/tests/multiClient.js",
+    "singleClient": "node dist/tests/singleClient.js",
+    "multiClient": "node dist/tests/multiClient.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write \"**/*.{js,json,md,sol,ts}\""
   }
