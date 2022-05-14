@@ -2,15 +2,6 @@ name: nodejs
 
 on: 
   push:
-     paths:
-      - "**/**"
-      - "!**/*.md/**"
-env:
-  COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
-  PULL_NUMBER: ${{ github.event.pull_request.number }}
-  RUN_ID: ${{ github.run_id }}
-  FORCE_COLOR: 2
-
 
 jobs:
   pipeline:
@@ -22,7 +13,6 @@ jobs:
       matrix:
         node-version: ['16.x']
         os: ['ubuntu-latest']
-
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
